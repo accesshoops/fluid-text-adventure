@@ -99,25 +99,22 @@ public:
     {
         SetState(AIWorldState::Goal, (uint8_t)goal, setAsDirty, effectType);
     }
-
+    //
+	//https://stackoverflow.com/questions/411103/function-with-same-name-but-different-signature-in-derived-class
+    //
     bool HasStateAIWS(AIWorldState state, bool value)
     {
         uint8_t val = (value ? 1 : 0);
-        return HasState(state, val);
+        return BaseContext::HasState(state, val);
     }
 
-    bool HasStateAIWS(AIWorldState state)
+    bool HasState(AIWorldState state) 
     {
-        return HasStateAIWS(state, 1);
+        return BaseContext::HasState(state, 1);
     }
 
     void SetStateAIWS(AIWorldState state, bool value, EffectType type)
     {
         SetState(state, (uint8_t)(value ? 1 : 0), true, type);
-    }
-
-    uint8_t GetState(AIWorldState state) 
-    {
-        return BaseContext::GetState(state);
     }
 };
