@@ -1,6 +1,6 @@
 #pragma once
 #include "Effects/Effect.h"
-#include "WorldState.h"
+#include "CoreIncludes/WorldState.h"
 #include "Contexts/BaseContext.h"
 
 using namespace FluidHTN;

@@ -1,5 +1,5 @@
 #include "StdIncludes.h"
-#include "BaseDomainBuilder.h"
+#include "CoreIncludes/BaseDomainBuilder.h"
 #include "Actions.h"
 #include "Bottle.h"
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "Domain.h"
+#include "CoreIncludes/Domain.h"
 #include "Planners/Planner.h"
 #include "DebugInterfaces/DecompositionLogEntry.h"
 #include "Console.h"
