@@ -2,7 +2,7 @@
 #define WIN32_LEAN_AND_MEAN
 #define VC_EXTRALEAN
 #include <windows.h>
-#include "CoreIncludes/pch.h"
+#include "pch.h"
 #include "DebugInterfaces/DecompositionLogEntry.h"
 #include <functional>
 #include<tuple>
